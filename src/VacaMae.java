@@ -1,46 +1,15 @@
-public class VacaMae implements Animal{
-    private String nome;
-    private int idade;
-    private String raca;
-
-    public VacaMae(String nome, int idade, String raca) {
-        this.nome = nome;
-        this.idade = idade;
-        this.raca = raca;
+public class VacaMae extends AnimalFazenda {
+    public VacaMae(String nome, int idade, String raca, String status) {
+        super(nome, idade, raca, "Vaca", status);
     }
 
     @Override
     public void emitirSom() {
-        System.out.println("Muuuu!");
+        System.out.println("Muuu!");
     }
 
     @Override
     public void coletarProduto() {
-        System.out.println("Você coletou um balde de leite!");
+        System.out.println("Você coletou um balde de leite da " + getNome() + "!");
     }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public int getIdade() {
-        return idade;
-    }
-
-    public void setIdade(int idade) {
-        this.idade = idade;
-    }
-
-    public String getRaca() {
-        return raca;
-    }
-
-    public void setRaca(String raca) {
-        this.raca = raca;
-    }
-
 }

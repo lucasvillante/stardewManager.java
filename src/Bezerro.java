@@ -1,19 +1,16 @@
-public class Bezerro extends VacaMae{
-
+public class Bezerro extends VacaMae {
     public Bezerro(String nome, int idade, String raca) {
-        super(nome, idade, raca);
+        super(nome, idade, raca, "Crescendo");
+        setTipo("Bezerro");
     }
 
     @Override
     public void emitirSom() {
-        super.emitirSom();
+        System.out.println("Muuu!");
     }
 
     @Override
     public void coletarProduto() {
-        super.coletarProduto();
+        System.out.println(getNome() + " ainda não produz leite.");
     }
-
-
-
 }

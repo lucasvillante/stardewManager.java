@@ -1,7 +1,9 @@
 public interface Animal {
+    void emitirSom();
 
-    public void emitirSom();
-    public void coletarProduto();
+    void coletarProduto();
 
+    void exibirStatus();
 
+    int getId();
 }
